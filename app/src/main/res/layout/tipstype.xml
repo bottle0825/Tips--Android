@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/attachment"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/typelist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="笔记"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

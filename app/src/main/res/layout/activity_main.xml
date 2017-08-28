@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dfc.tips.com.dfc.tips.action.MainActivity"
+    android:id="@+id/MainDrawerLayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/grey"
+                >
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/category"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="手记"
+                    android:textStyle="bold"
+                    android:textColor="@color/top"
+                    android:textSize="25dp"/>
+
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_below="@id/title"
+                android:id="@+id/tips_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:background="#f0f0f0"
+                android:orientation="horizontal"
+                >
+
+            </FrameLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/left_menu"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_drawerlayout"
+        android:layout_gravity="start"
+        android:clickable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/menu_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                        <com.dfc.tips.com.dfc.tips.msg.RoundImageView
+                            android:id="@+id/main_head"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            app:imageType="circle"
+                            android:src="@drawable/head"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:id="@+id/Layout_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bussiness_man"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="50dp"/>
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="用户名"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:id="@+id/Layout_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/form"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="50dp"/>
+                        <TextView
+                            android:id="@+id/note"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="手记"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:id="@+id/Layout_basket"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/delete"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="50dp"/>
+                        <TextView
+                            android:id="@+id/basket"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="废纸篓"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:id="@+id/Layout_wordnote"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/wordlogo"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="50dp"/>
+                        <TextView
+                            android:id="@+id/wordnote"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="单词本"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:id="@+id/Layout_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/moneytag"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="50dp"/>
+                        <TextView
+                            android:id="@+id/accountbook"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="随身账本"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Layout_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/add"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+                    <Button
+                        android:id="@+id/cancel"
+                        android:text="注销"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/layout_border4"
+                        android:shadowColor="@color/back"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginBottom="50dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/menu_unlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <com.dfc.tips.com.dfc.tips.msg.RoundImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:imageType="circle"
+                        android:src="@drawable/head"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/Login"
+                    android:text="登录"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/layout_border4"
+                    android:shadowColor="@color/back"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="75dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
